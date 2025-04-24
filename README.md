@@ -28,9 +28,13 @@ python chlamydataset2relion5.py /path/to/chlamy_visual_proteomics/ --output_dir 
 
 **Tip:** the `tomolist_num_dir.star` file is provided in this repo for convenience. Alternatively, it can also be [downloaded](https://ftp.ebi.ac.uk/empiar/world_availability/11830/data/chlamy_visual_proteomics/tomolist_num_dir.star) from EMPIAR.
 
-5. Profit: the generated `/path/to/relion5/project/tomograms.star` can be used as a direct entry in Relion-5 jobs.
+5. **Profit!** the generated `/path/to/relion5/project/tomograms.star` can be used as a direct entry in Relion-5 jobs.
 
-   **NOTE:** make sure you launch Relion-5 in tomography mode, i.e. by running `relion --tomo &` 
+   **NOTE:** make sure you launch Relion-5 in tomography mode, i.e. by running `relion --tomo &`
+
+6. **OPTIONAL:** for a sanity check, it's a good idea to have Relion reconstruct at least one imported tomogram and make sure it matches the deposited ctf3d or cryo-CARE bin4 tomogram:
+![image](https://github.com/user-attachments/assets/a37b6556-b14c-4951-b92a-87bc2094c1b8)
+
 
 # Acknowledgments
 This script is almost entirely derived from [aretomo3torelion5](https://github.com/Phaips/aretomo3torelion5/) from [@Phaips](https://github.com/Phaips) 🚀
